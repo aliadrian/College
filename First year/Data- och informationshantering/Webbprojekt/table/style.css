@@ -1,0 +1,29 @@
+table {
+  width: 25%;
+}
+
+tbody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+tr {
+  line-height: 1.8;
+}
+
+.cells {
+  border-right: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  grid-column: 1 / 2;
+  padding-right: 1rem;
+}
+
+.units {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / 3;
+}

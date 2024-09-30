@@ -1,0 +1,191 @@
+:root {
+  --beige: #fff6e6;
+  --light-blue: #00a1e0;
+  --dark-blue: #00648b;
+  --black: #000000;
+  --grey: #444444;
+  --white: #ffffff;
+
+  --primary-font: Helvetica, Arial, sans-serif;
+  --secondary-font: "Courier New", Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--beige);
+  background-image: url("../img/exempel_pa_tillrackligt_bra_likhet_med_malll_pluto.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+header {
+  background: var(--black);
+  padding: 1rem 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-inline: 4.5rem;
+}
+
+.text {
+  width: 100%;
+  text-align: left;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 4.2rem;
+  color: var(--light-blue);
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+}
+
+.subtitle {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-family: var(--primary-font);
+}
+
+.img {
+  width: 600px;
+  text-align: left;
+}
+
+.pluto_img {
+  width: 100%;
+  height: 100%;
+}
+
+.img_links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.links {
+  display: flex;
+  align-self: end;
+  gap: 2rem;
+}
+
+.links a {
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+}
+
+main {
+  padding: 7.5rem 4.5rem;
+}
+
+.container_title {
+  padding: 0rem 5rem;
+}
+
+.title_pluto {
+  color: var(--grey);
+  font-size: 2.55rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0rem;
+  font-family: var(--primary-font);
+}
+
+.container_first_paragraph {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 5rem 2rem;
+}
+
+.subtitle_pluto {
+  color: var(--dark-blue);
+  padding-bottom: 0.25rem;
+  word-spacing: 4.5px;
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+}
+
+.text_pluto {
+  line-height: 1.5;
+  width: 26.85rem;
+  color: var(--grey);
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+}
+
+.facts_about_pluto > .text_pluto {
+  width: 26.75rem;
+}
+
+.units_and_measurements {
+  display: flex;
+  color: var(--light-blue);
+  white-space: nowrap;
+}
+
+table {
+  width: 25%;
+}
+
+tbody {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+}
+
+tr {
+  line-height: 2.8;
+}
+
+.cells {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  grid-column: 1/2;
+  padding-right: 10px;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+}
+
+.units {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/3;
+  border-left: 3px solid var(--light-blue);
+  align-items: start;
+  padding-left: 10px;
+  font-family: var(--secondary-font);
+}
+
+.container_second_paragraph,
+.container_third_paragraph {
+  padding: 0rem 5rem 2rem 5rem;
+}
+
+.footer_container {
+  display: flex;
+  padding: 3rem 0rem;
+  background: var(--black);
+  justify-content: center;
+}
+
+.footer_container a {
+  color: var(--white);
+  font-family: var(--primary-font);
+  text-decoration: none;
+}
