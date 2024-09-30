@@ -1,0 +1,54 @@
+:root {
+  --remSize: 62.5%;
+  --pageSidePadding: 15px;
+  --p-global: 0.25rem;
+  --b-global: 0.25rem;
+  --br-global: 0.25rem;
+  --m-global: 0.25rem;
+  --bs-global: 10rem;
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --remSize: 68.75%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  :root {
+    --remSize: 71.875%;
+  }
+}
+
+/*
+Linear calculation to get a balanced pageSidePadding
+ 0.0102 breakpoint − 2.9393 = pageSidePadding
+*/
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --remSize: 75%;
+    --pageSidePadding: 4.89vw;
+  }
+}
+@media only screen and (min-width: 996px) {
+  :root {
+    --remSize: 81.25%;
+    --pageSidePadding: 7.22vw;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  :root {
+    --remSize: 87.5%;
+    --pageSidePadding: 10.12vw;
+  }
+}
+@media only screen and (min-width: 1336px) {
+  :root {
+    --pageSidePadding: 10.69vw;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  :root {
+    --pageSidePadding: 12.73vw;
+  }
+}

@@ -1,0 +1,59 @@
+.parent-div {
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+   
+  .parent-div {
+    & img {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+   
+   
+  .info {
+    z-index: 1;
+   
+  }
+   
+   
+  @media only screen and (min-width: 768px) {
+   
+    .parent-div {
+      position: relative;
+      transition: all 0.2s ease-in-out;
+   
+      & .info {
+        opacity: 0;
+        transition: opacity 0.5s;
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+   
+   
+    .parent-div {
+      &:hover {
+        .info {
+          visibility: visible;
+          opacity: 0.9;
+        }
+      }
+    }
+   
+   
+    .parent-div {
+      & img {
+        width: 100%;
+        display: block;
+        position: relative;
+   
+      }
+    }   
+  }

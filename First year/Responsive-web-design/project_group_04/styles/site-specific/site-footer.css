@@ -1,0 +1,74 @@
+.site-footer {
+  padding-top: 10em;
+  padding-bottom: 10rem;
+  background: hsl(var(--hue-1), 50%, 15%);
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  font-size: 2rem;
+  color: hsl(var(--hue-3), 40%, 90%);
+
+  & h3 {
+    color: hsl(var(--hue-3), 100%, 80%);
+  }
+
+  & ul {
+    padding-left: 1.1em;
+    font-size: .8em;
+  }
+
+  & li {
+    position: relative;
+    padding-inline-start: .5ch;
+    margin-bottom: .5em;
+
+    @media (width >=480px) {
+      padding-inline-start: 1ch;
+    }
+
+    &::marker {
+      font-size: 1em;
+      color: hsl(var(--hue-3), 40%, 90%);
+      content: "\0025B7\200A";
+    }
+
+    &:hover::marker {
+      content: "\0025BA";
+    }
+
+    & a:hover {
+      box-shadow: inset 0 -2px hsl(var(--hue-3), 40%, 90%);
+      color: hsl(var(--hue-3), 20%, 90%);
+    }
+
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  & .social-media {
+    width: 5.5rem;
+    transform: scale(1);
+    line-height: 0;
+
+    &:hover {
+      transform: scale(1.1);
+
+      & path {
+        fill: hsl(var(--hue-3), 50%, 90%);
+      }
+    }
+
+    &:active,
+    &:focus {
+      transform: scale(0.95);
+    }
+
+    & path {
+      fill: hsl(var(--hue-3), 20%, 90%);
+    }
+  }
+
+
+
+}

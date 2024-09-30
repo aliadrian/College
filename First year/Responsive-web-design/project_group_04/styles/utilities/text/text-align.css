@@ -1,0 +1,124 @@
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+@media only screen and (min-width: 400px) {
+  .text-left-xxs {
+    text-align: left;
+  }
+  .text-center-xxs {
+    text-align: center;
+  }
+  .text-right-xxs {
+    text-align: right;
+  }
+  .text-justify-xxs {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .text-left-xs {
+    text-align: left;
+  }
+  .text-center-xs {
+    text-align: center;
+  }
+  .text-right-xs {
+    text-align: right;
+  }
+  .text-justify-xs {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .text-left-sm {
+    text-align: left;
+  }
+  .text-center-sm {
+    text-align: center;
+  }
+  .text-right-sm {
+    text-align: right;
+  }
+  .text-justify-sm {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text-left-md {
+    text-align: left;
+  }
+  .text-center-md {
+    text-align: center;
+  }
+  .text-right-md {
+    text-align: right;
+  }
+  .text-justify-md {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 996px) {
+  .text-left-lg {
+    text-align: left;
+  }
+  .text-center-lg {
+    text-align: center;
+  }
+  .text-right-lg {
+    text-align: right;
+  }
+  .text-justify-lg {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .text-left-xl {
+    text-align: left;
+  }
+  .text-center-xl {
+    text-align: center;
+  }
+  .text-right-xl {
+    text-align: right;
+  }
+  .text-justify-xl {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .text-left-xxl {
+    text-align: left;
+  }
+  .text-center-xxl {
+    text-align: center;
+  }
+  .text-right-xxl {
+    text-align: right;
+  }
+  .text-justify-xxl {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .text-left-xxxl {
+    text-align: left;
+  }
+  .text-center-xxxl {
+    text-align: center;
+  }
+  .text-right-xxxl {
+    text-align: right;
+  }
+  .text-justify-xxxl {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,25 @@
+.image {
+  position: relative;
+  overflow: hidden;
+}
+.image--mono {
+  position: relative;
+}
+.image--mono::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(var(--hue-1), 20%, 40%);
+  mix-blend-mode: color;
+  opacity: .35;
+  content: "";
+}
+.image__img {
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  transition: all 500ms ease-in-out;
+}

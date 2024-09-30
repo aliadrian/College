@@ -1,0 +1,10 @@
+.ws-nowrap {
+  white-space: nowrap;
+}
+.ws-wrap {
+  white-space: wrap;
+}
+.ws-wrap-force::before {
+  white-space: pre;
+  content: "\a";
+}

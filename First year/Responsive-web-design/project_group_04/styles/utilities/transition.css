@@ -1,0 +1,9 @@
+.trst {
+  transition: all 300ms ease-in-out;
+}
+.trst-short {
+  transition-duration: 150ms;
+}
+.trst-long {
+  transition-duration: 500ms;
+}

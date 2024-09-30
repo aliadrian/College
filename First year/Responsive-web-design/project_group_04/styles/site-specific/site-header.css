@@ -1,0 +1,59 @@
+.site-header {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: hsl(var(--hue-3), 20%, 20%);
+  background-image: linear-gradient(0deg,
+      hsl(var(--hue-1), 50%, 15%) 6rem,
+      hsl(var(--hue-3), 70%, 75%));
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &::before {
+    z-index: -1;
+    background-image: url(../../img/decorative/header.webp);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    filter: blur(0.5rem);
+  }
+
+  &::after {
+    z-index: 1;
+    background-image: linear-gradient(0deg,
+        hsl(var(--hue-1), 50%, 15%) 2rem,
+        hsl(var(--hue-3), 70%, 75%, 0.25));
+  }
+
+  & .heading,
+  & .lead {
+    position: relative;
+    z-index: 2;
+    font-family: var(--fontMono);
+  }
+  & .heading {
+    padding-inline-start: 0.15ch;
+    font-size: clamp(9rem, 33vw, 16rem);
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    line-height: 0.85;
+    text-align: center;
+  }
+  & .lead {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    line-height: 100%;
+    text-align: center;
+  }
+}

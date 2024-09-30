@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VAST - Sign Up</title>
+  <meta name="description"
+    content="This text will quite often be displayed beneath the page name in the search results" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/definitions/sizes.css" />
+  <link rel="stylesheet" href="./styles/definitions/typography.css" />
+  <link rel="stylesheet" href="./styles/definitions/colors.css" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/grid.css" />
+  <link rel="stylesheet" href="./styles/components/container.css" />
+  <link rel="stylesheet" href="./styles/components/navbar.css" />
+  <link rel="stylesheet" href="./styles/components/modal.css" />
+  <link rel="stylesheet" href="./styles/components/form.css" />
+  <link rel="stylesheet" href="./styles/components/headline.css" />
+  <link rel="stylesheet" href="./styles/components/icon.css" />
+  <link rel="stylesheet" href="./styles/components/info.css" />
+  <link rel="stylesheet" href="./styles/components/table.css" />
+  <link rel="stylesheet" href="./styles/components/image.css" />
+  <link rel="stylesheet" href="./styles/utilities/display.css" />
+  <link rel="stylesheet" href="./styles/utilities/position.css" />
+  <link rel="stylesheet" href="./styles/utilities/box-model/padding.css" />
+  <link rel="stylesheet" href="./styles/utilities/box-model/border.css" />
+  <link rel="stylesheet" href="./styles/utilities/box-model/margin.css" />
+  <link rel="stylesheet" href="./styles/utilities/text/font-size.css" />
+  <link rel="stylesheet" href="./styles/utilities/text/color.css" />
+  <link rel="stylesheet" href="./styles/utilities/text/text-align.css" />
+  <link rel="stylesheet" href="./styles/utilities/text/text-transform.css" />
+  <link rel="stylesheet" href="./styles/utilities/text/white-space.css" />
+  <link rel="stylesheet" href="./styles/utilities/border-radius.css" />
+  <link rel="stylesheet" href="./styles/utilities/overflow.css" />
+  <link rel="stylesheet" href="./styles/utilities/background-color.css" />
+  <link rel="stylesheet" href="./styles/utilities/transition.css" />
+  <link rel="stylesheet" href="./styles/utilities/box-shadow.css" />
+  <link rel="stylesheet" href="./styles/site-specific/site-header.css" />
+  <link rel="stylesheet" href="./styles/site-specific/site-footer.css" />
+  <link rel="stylesheet" href="./styles/theme.css" />
+  <link rel="stylesheet" href="./styles/page-specific/sign-up.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1 class="heading mt-35" alt="VAST logo"><span class="c1-80-90">VA</span><span class="c3-100-60">S</span><span
+        class="c1-80-90">T</span></h1>
+    <p class="lead c1-80-90 mb-35">Data Storage & Analysis</p>
+    <nav class="nav pb-2" aria-label="Main Navigation">
+      <ul class="head">
+        <li class="item">
+          <a class="link px-4 py-2" href="./home.html"><span class="c1-80-90">VA</span><span class="c3-100-60">S</span><span class="c1-80-90">T</span></a>
+        </li>
+        <li class="item menu"><a class="link px-4 py-2" href="#" aria-label="Navigation Menu">&#9776;</a></li>
+      </ul>
+      <ul class="list">
+        <li class="item"><a class="link px-4 py-2" href="./services.html">Services</a></li>
+        <li class="item"><a class="link px-4 py-2" href="./members.html">Members</a></li>
+        <li class="item split"><a class="link px-4 py-2" href="./account.html">Account</a></li>
+        <li class="item"><a class="link px-4 py-2 current" href="./sign_up.html">Sign Up</a></li>
+        <li class="item"><a class="link px-4 py-2" id="login" href="#" aria-label="Log In">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="ps-rel">
+    <section class="container mt-50 mb-25">
+      <form class="sign-up-form form" method="POST" action="#">
+        <header class="form__header flex fbetween fbase">
+          <h2 class="headline headline--danger">Sign <span>up</span></h2>
+          <p class="form__info">Required fields are followed by
+            <strong><abbr class="form__text-required" title="required"
+                aria-label="required"><sup>*</sup></abbr></strong>
+          </p>
+        </header>
+        <ul>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="forname">
+                <span>First Name</span>
+                <strong><abbr class="form__text-required" title="required"
+                    aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="forname" name="firstName" type="text" required placeholder="Jussi"
+                value="" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="surname">
+                <span>Last Name</span>
+                <strong><abbr class="form__text-required" title="required"
+                    aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="surname" name="lastName" type="text" required placeholder="Björling"
+                value="" />
+            </div>
+          </li>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="regMail">
+                <span>Email</span>
+                <strong><abbr class="form__text-required" title="required"
+                    aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="regMail" name="userMail" type="email" required
+                placeholder="address@mail.com" value="" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="cRegMail">
+                <span>Confirm Email</span>
+                <strong><abbr class="form__text-required" title="required"
+                    aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="cRegMail" name="cUserMail" type="email" required value="" />
+            </div>
+          </li>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="regPwd">
+                <span>Password</span>
+                <strong><abbr class="form__text-required" title="required"
+                    aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="regPwd" name="password" type="password" required placeholder="****"
+                value="" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="cRegPwd">
+                <span>Confirm Password</span>
+                <strong><abbr class="form__text-required" title="required"
+                    aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="cRegPwd" name="cPassword" type="password" required value="" />
+            </div>
+          </li>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="member">
+                <span>Role</span>
+              </label>
+              <div class="form__select-container">
+                <select class="form__select" id="member" name="memberType">
+                  <option value="Guest">Guest</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Student">Student</option>
+                  <option value="Manager">Manager</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="form__btns flex fend">
+          <button class="btn btn--danger" type="reset">Clear</button>
+          <button class="btn btn--success" type="submit">Register</button>
+        </div>
+        <div class="form__group flex fend">
+          <small>Already have an account?
+            <a href="#" title="Go to log in page">Log in</a>
+          </small>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/formSelect.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+</html>

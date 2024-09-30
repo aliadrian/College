@@ -1,0 +1,18 @@
+.f-size-largest {
+  font-size: clamp(3.2rem, 8vmin, 5.5rem);
+}
+.f-size-large {
+  font-size: clamp(2.9rem, 6.5vmin, 4.5rem);
+}
+.f-size-medium {
+  font-size: clamp(2.5rem, 5.5vmin, 3.8rem);
+}
+.f-size-small {
+  font-size: clamp(2.2rem, 4.5vmin, 3.2rem);
+}
+.f-size-very-small {
+  font-size: clamp(2rem, 4vmin, 2.8rem);
+}
+.f-size-smallest {
+  font-size: clamp(1.6rem, 3.2vmin, 2.2rem);
+}

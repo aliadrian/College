@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+.card__main {
+    flex-grow: 1;
+  }
+.card__subtitle {
+    display: block;
+  }

@@ -1,0 +1,15 @@
+:root {
+  --icon-size: 5.5em;
+}
+@media screen and (min-width: 992px) {
+  :root {
+    --icon-size: 4.5em;
+  }
+}
+.icon {
+  height: var(--icon-size);
+  width: var(--icon-size);
+  padding: calc(var(--icon-size) * 0.15);
+  line-height: var(--icon-size);
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+.oflow-auto {
+  overflow: auto;
+}
+.oflow-scroll {
+  overflow: scroll;
+}
+.oflow-hidden {
+  overflow: hidden;
+}
+.oflow-visible {
+  overflow: visible;
+}

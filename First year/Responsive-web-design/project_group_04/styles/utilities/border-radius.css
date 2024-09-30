@@ -1,0 +1,93 @@
+:root {
+  --br-factor: 1;
+}
+@media only screen and (min-width: 480px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+@media only screen and (min-width: 576px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+@media only screen and (min-width: 996px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  :root {
+    --br-factor: 1;
+  }
+}
+:root {
+  --br-local: calc(var(--br-global) * var(--br-factor));
+  --br-01: calc(var(--br-local) * 2);
+  --br-02: calc(var(--br-local) * 3);
+  --br-03: calc(var(--br-local) * 4);
+  --br-04: calc(var(--br-local) * 5);
+  --br-05: calc(var(--br-local) * 6);
+  --br-06: calc(var(--br-local) * 7);
+  --br-07: calc(var(--br-local) * 8);
+  --br-08: calc(var(--br-local) * 9);
+  --br-09: calc(var(--br-local) * 10);
+  --br-10: calc(var(--br-local) * 11);
+  --br-11: calc(var(--br-local) * 12);
+  --br-12: calc(var(--br-local) * 13);
+}
+.br-1 {
+  border-radius: var(--br-01);
+}
+.br-2 {
+  border-radius: var(--br-02);
+}
+.br-3 {
+  border-radius: var(--br-03);
+}
+.br-4 {
+  border-radius: var(--br-04);
+}
+.br-5 {
+  border-radius: var(--br-05);
+}
+.br-6 {
+  border-radius: var(--br-06);
+}
+.br-7 {
+  border-radius: var(--br-07);
+}
+.br-8 {
+  border-radius: var(--br-08);
+}
+.br-9 {
+  border-radius: var(--br-09);
+}
+.br-10 {
+  border-radius: var(--br-10);
+}
+.br-11 {
+  border-radius: var(--br-11);
+}
+.br-12,
+.circle {
+  border-radius: 100vmax;
+}
+:where(.br-12, .circle) {
+  line-height: 1;
+}

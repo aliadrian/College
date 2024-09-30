@@ -1,0 +1,12 @@
+.text-trns-none {
+  text-transform: none;
+}
+.text-trns-upper {
+  text-transform: uppercase;
+}
+.text-trns-lower {
+  text-transform: lowercase;
+}
+.text-trns-cap {
+  text-transform: capitalize;
+}

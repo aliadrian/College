@@ -1,0 +1,122 @@
+/*
+---GRID-AREA---
+Instructions
+All CSS declarations and media queries in this
+file should strictly target the "grid-area" div
+and its content in the layout.html file.
+
+You're limited to the below stated:
+--------------------------
+Mandatory declaration
+¤ display: grid;                            | Only grid
+--------------------------
+Permitted media queries
+¤ @media screen and (min-width: 768px) {    |
+¤ @media screen and (min-width: 1024px) {   |
+--------------------------
+Permitted properties
+¤ display                                   | Only grid
+¤ border-radius                             |
+¤ font-weight                               |
+¤ grid-area                                 |
+¤ grid-gap                                  |
+¤ grid-template-areas                       |
+¤ grid-template-columns                     |
+¤ place-content                             |
+--------------------------
+
+Student CSS below the line
+-------------------------- */
+.grid-area {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "you b"
+    "c know"
+    "e grid-area"
+    "g h"
+    "i j";
+}
+
+.grid-area div {
+  display: grid;
+  place-content: center;
+}
+
+.grid-area div:nth-child(1) p,
+.grid-area div:nth-child(4) p,
+.grid-area div:nth-child(6) p {
+  font-weight: bold;
+}
+
+.grid-area div:first-child {
+  grid-area: you;
+}
+
+.grid-area div:nth-child(2) {
+  grid-area: b;
+}
+
+.grid-area div:nth-child(3) {
+  grid-area: c;
+}
+
+.grid-area div:nth-child(4) {
+  grid-area: know;
+}
+
+.grid-area div:nth-child(5) {
+  grid-area: e;
+}
+
+.grid-area div:nth-child(6) {
+  grid-area: grid-area;
+}
+
+.grid-area div:nth-child(7) {
+  grid-area: g;
+}
+
+.grid-area div:nth-child(8) {
+  grid-area: h;
+}
+
+.grid-area div:nth-child(9) {
+  grid-area: i;
+}
+
+.grid-area div:nth-child(10) {
+  grid-area: j;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-area {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "know e c"
+      "b you you"
+      "h grid-area grid-area"
+      "i grid-area grid-area"
+      "j j g";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-area {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "c grid-area grid-area e"
+      "b grid-area grid-area g"
+      "h i you you"
+      "j know know know";
+  }
+
+  .grid-area div:nth-child(3) {
+    border-radius: 10rem 0 0 0;
+  }
+
+  .grid-area div:nth-child(4) {
+    border-radius: 0 0 10rem 0;
+  }
+}

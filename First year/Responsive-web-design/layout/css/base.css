@@ -1,0 +1,187 @@
+/* 
+  Alterations to this file aren't allowed
+*/
+:root {
+  --hue: 162;
+  --s1: 25%;
+  --s2: 50%;
+  --s3: 75%;
+  --l1: 15%;
+  --l2: 75%;
+  --l3: 85%;
+  --l4: 90%;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2');
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(var(--hue), var(--s2), var(--l3));
+  color: hsl(var(--hue), var(--s3), var(--l1));
+  font-family: 'Poppins';
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-block-start: 8rem;
+  position: relative;
+}
+header,
+main {
+  width: clamp(20rem, 80vw, 120rem);
+  margin: 0 auto;
+}
+h1 {
+  position: relative;
+  display: inline;
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+h1::after {
+  content: "Will be True";
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  font-size: 1rem;
+  vertical-align: super;
+  padding-left: 1rem;
+  opacity: 0.1;
+}
+header p {
+  max-width: 50ch;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+header div {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  font-size: 1.6rem;
+}
+main {
+  padding-bottom: 10vh;
+}
+main > div:first-child {
+  margin-block-start: 4rem;
+}
+main > div:not(:first-child) {
+  margin-block-start: 5rem;
+}
+*[class] > * {
+  padding-block: 0.6rem;
+  box-shadow: inset 6px 6px 6px hsl(var(--hue), var(--s2), var(--l2)),
+    inset -6px -6px 6px hsl(var(--hue), var(--s3), var(--l4));
+  border-color: hsla(var(--hue), var(--s3), var(--l1), 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+main p {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+outofrange {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-color: #aabaca !important;
+  color: #204055 !important;
+  opacity: 0;
+}
+tonarrow,
+towide {
+  display: block;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+}
+.sizeAlert {
+  font-weight: bold;
+  color: black;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --hue: 214;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h1::after {
+    content: "Swenglish";
+  }
+  header p {
+    font-size: 1.4rem;
+  }
+  *[class] > * {
+    padding-block: 1.5rem;
+  }
+  main p {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --hue: 284;
+  }
+  h1::after {
+    content: "Yoda";
+  }
+  *[class] > * {
+    padding-block: 2rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  outofrange {
+    z-index: 1;
+  }
+  outofrange,
+  tonarrow {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1281px) {
+  outofrange {
+    z-index: 1;
+  }
+  outofrange,
+  towide {
+    opacity: 1;
+  }
+}
