@@ -1,0 +1,14 @@
+[
+  {
+    "rese_id": "oslo",
+    "resetyp": "weekend",
+    "pris": 400,
+    "antal_dagar": 4
+  },
+  {
+    "rese_id": "bergen",
+    "resetyp": "familjeresa",
+    "pris": 600,
+    "antal_dagar": 14
+  }
+]

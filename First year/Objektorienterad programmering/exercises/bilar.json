@@ -1,0 +1,17 @@
+[
+  {
+    "regnr": "qwe123",
+    "brand": "volvo",
+    "year": "2000"
+  },
+  {
+    "regnr": "qwe456",
+    "brand": "saab",
+    "year": "2009"
+  },
+  {
+    "regnr": "qwe789",
+    "brand": "kia",
+    "year": "2010"
+  }
+]

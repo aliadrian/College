@@ -1,0 +1,17 @@
+﻿{
+    "Kanelbulle": {
+        "name": "Kanelbulle",
+        "amount": 2,
+        "price": 10
+    },
+    "k": {
+        "name": "k",
+        "amount": 10,
+        "price": 30
+    },
+    "a": {
+        "name": "a",
+        "amount": 1,
+        "price": 10.0
+    }
+}

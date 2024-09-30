@@ -1,0 +1,17 @@
+[
+  {
+    "namn": "päron",
+    "pris": 15,
+    "antal": 30
+  },
+  {
+    "namn": "gurka",
+    "pris": 13,
+    "antal": 25
+  },
+  {
+    "namn": "tomat",
+    "pris": 20,
+    "antal": 30
+  }
+]
